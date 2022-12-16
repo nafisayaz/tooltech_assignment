@@ -1,0 +1,22 @@
+{
+    "Stack" : {
+        "option1" : 4,
+        "option2"   : 10
+    },
+    "HouseID": {
+        "id" : [1,2,3,4,5,6,7,8,9,10]
+    },
+    "Supply" : {
+        "option1" : "once",
+        "option2"   : "recurring"
+    },
+    "Limit" : {
+        "value" : 2000,
+        "type"  : "Gallon"
+    },
+    "Recurrency" : ["daily","weekly"],
+    "Validity" : {
+        "start" : "2022-01-01T00:00:00Z",
+        "end" :   "2023-12-01T00:00:00Z"
+    }
+}

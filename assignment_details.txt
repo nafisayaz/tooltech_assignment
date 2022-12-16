@@ -1,0 +1,73 @@
+
+Write Code and share it over the mail on or before 16th Dec 2022.  Interview date 16 Dec at 2:00 PM.
+
+Write a C++ library function to,  Inform the user about daily lunchtime if there is no meeting plan at the same time.
+
+Input = Lunch time – 1.00 pm to 2,00pm
+Meeting schedule -   Monday, Friday 12 to 1.30 Pm.
+
+"validFrom": "2022-10-01 T0 8:18:00Z",
+"valid": "2022-10-30 T0 8:30:00Z"
+
+DO NOT USE ANY DATABASE for the below assignment, use JSON.
+ 
+
+The task is to create a C++ software library that will determine which Water distribution Profile is current at a given time 
+and support the other distribution network.
+
+I want to apply a current limit on Water distribution, so everyone gets a fair share of water.
+
+The following data fields and rules must be supported and used during the selection of the current limit:
+
+• Stack level  ( for ex.  4 houses at a time or 10 houses at a time )
+
+• House ID
+
+• Supply profile kind (once, Recurring)
+
+• Recurrency kind (Daily, Weekly) (*only for kind=Recurring)
+
+• Transaction ID
+
+• Validity date and time  (Valid for 01.12.2022 to 30.12.2022) // 
+
+• Schedule start time   
+
+• Schedule duration  ( Monday – 2hrs, Tues- 5hrs and other day 1hrs)
+
+• Relative period start time
+
+
+The supply status structure that is given as an input has the following data fields:
+
+• Current reference date and time
+
+• House ID
+
+• current Transaction ID (if any)
+
+• current supply start time (if current transaction) Expected output from the library
+
+• Current water distribution profile ID
+
+
+
+Expected output from the library
+
+• Current Supply Profile ID
+
+• Current schedule ID
+
+• Reference to the current Supply period object, from which it is possible to read:
+
+▪ Limit value (e.g. 2000)
+
+▪ Limit type (e.g. Gallon)
+
+ 
+
+Requirements listing
+
+A. Library shall provide a JSON supply profile parser, that takes in a JSON string as input (in memory), and will output objects describing the supply profile.
+
+This library will be embedded into the main firmware.
