@@ -43,10 +43,6 @@ class lunchHandler{
         bool meeting_tm(std::string s_day, const char* to_from );
         bool is_meeting(long int currentTime);
 
-        ~lunchHandler(){
-            std::cout << "~lunchHandler()"<<"\n";
-        };
-
     private:
         lunchHandler(){};
         lunchHandler(const std::string filename);
@@ -55,13 +51,9 @@ class lunchHandler{
         std::vector<std::tm> m_lunch;
         std::vector<std::tm> m_meeting;
 
-
-
-
 };
 
 lunchHandler* lunchHandler::m_ptr = nullptr;
-
 
 class lunchBox{
 
@@ -77,7 +69,6 @@ class lunchBox{
         std::tm     m_current_time{};
 
 };
-
 
 // #ifdef __cplusplus		
 // }
