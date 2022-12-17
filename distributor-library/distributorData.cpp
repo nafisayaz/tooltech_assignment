@@ -86,12 +86,11 @@ void S_distributor_t::push_back(std::shared_ptr<Scheduler> S_ptr){
 
 
 std::shared_ptr<Scheduler> Creator_s_distributor::get_instance(){
-    std::shared_ptr<Scheduler> S_ptr = std::shared_ptr<Scheduler>(new S_distributor());
-    return S_ptr; 
+    return std::shared_ptr<Scheduler>(new S_distributor());
+    
 }
 
 std::shared_ptr<Scheduler> Creator_s_distributor_t::get_instance(){
-    std::shared_ptr<Scheduler> S_ptr = std::shared_ptr<Scheduler>(new S_distributor_t());
-    return S_ptr; 
+    return std::shared_ptr<Scheduler>(new S_distributor_t());
 }
 
